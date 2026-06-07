@@ -1,0 +1,6 @@
+{
+  "name": "Valley House Cleaning",
+  "description": "Professional house cleaning services in Phoenix and the West Valley area.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

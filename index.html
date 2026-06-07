@@ -1,0 +1,1969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valley House Cleaning | Professional House Cleaning in Phoenix & West Valley</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS RESET & VARIABLES */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg-primary: #0A0F0D; /* Luxurious Midnight Forest Obsidian */
+            --bg-secondary: #121A15; /* Elegant Deep Pine Slate */
+            --accent: #10B981; /* Glowing Fresh Botanical Clean Green */
+            --accent-hover: #059669; /* Rich Deep Minty Leaf Green */
+            --text-dark: #F2F5F3; /* Pristine Soft Mountain Sage White */
+            --text-muted: #8AA491; /* Gentle Sage Mist Gray-Green */
+            --border-color: #1F2D25; /* Sleek Minimal Evergreen Border */
+            --bg-darkest: #050806; /* Darkest Midnight Shadow for Footer */
+            --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            --font-headings: 'DM Sans', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-primary);
+            color: var(--text-dark);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* TYPOGRAPHY UTILITIES */
+        h1, h2, h3, h4 {
+            font-family: var(--font-headings);
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            font-size: 1.05rem;
+            font-weight: 300;
+            color: var(--text-muted);
+        }
+
+        span.accent-text {
+            color: var(--accent);
+        }
+
+        /* CONTAINERS & PACING */
+        /* Generous whitespace across sections */
+        section {
+            padding: 8rem 2rem;
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 5rem 1.25rem;
+            }
+        }
+
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* ASYMMETRIC TITLE SYSTEM */
+        .section-header {
+            margin-bottom: 5rem;
+            max-width: 800px;
+        }
+
+        .section-title {
+            font-size: 3.5rem; /* Large, bold editorial titles */
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            line-height: 1.05;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .section-desc {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 600px;
+        }
+
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2.5rem;
+            }
+            .section-header {
+                margin-bottom: 3rem;
+            }
+        }
+
+        /* STICKY HEADER & NAVBAR */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: var(--transition-smooth);
+            background: transparent;
+        }
+
+        header.scrolled {
+            background: rgba(10, 15, 13, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 4px 30px rgba(16, 185, 129, 0.04);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem 2rem;
+            transition: var(--transition-smooth);
+        }
+
+        header.scrolled .nav-container {
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            color: var(--text-dark);
+        }
+
+        .logo-symbol {
+            width: 32px;
+            height: 32px;
+            color: var(--accent);
+        }
+
+        .logo-text {
+            font-family: var(--font-headings);
+            font-weight: 700;
+            font-size: 1.35rem;
+            letter-spacing: -0.03em;
+        }
+
+        .logo-subtext {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-muted);
+            font-weight: 500;
+            border-left: 1px solid var(--border-color);
+            padding-left: 0.5rem;
+            margin-left: 0.25rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 0.95rem;
+            position: relative;
+            padding: 0.25rem 0;
+            transition: var(--transition-smooth);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-link:hover {
+            color: var(--accent);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            background-color: var(--accent);
+            color: var(--bg-primary) !important;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: var(--transition-smooth);
+            border: 1px solid var(--accent);
+        }
+
+        .nav-cta:hover {
+            background-color: var(--accent-hover);
+            border-color: var(--accent-hover);
+            box-shadow: 0 4px 15px rgba(46, 139, 87, 0.15);
+        }
+
+        /* MOBILE MENU BANNER */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            z-index: 1010;
+            padding: 4px;
+        }
+
+        .hamburger span {
+            width: 24px;
+            height: 2px;
+            background-color: var(--text-dark);
+            transition: var(--transition-smooth);
+            transform-origin: center;
+        }
+
+        @media (max-width: 991px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 400px;
+                height: 100vh;
+                background-color: var(--bg-primary);
+                flex-direction: column;
+                justify-content: center;
+                gap: 2rem;
+                padding: 4rem 2rem;
+                box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
+                transition: var(--transition-smooth);
+                z-index: 1005;
+            }
+
+            .nav-menu.active {
+                right: 0;
+            }
+
+            .hamburger.active span:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+
+            .hamburger.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active span:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+
+        /* BUTTONS */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: var(--transition-smooth);
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: var(--bg-primary);
+            border: 1px solid var(--accent);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+            border-color: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(46, 139, 87, 0.2);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--accent);
+            border: 1.5px solid var(--accent);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--bg-secondary);
+            transform: translateY(-2px);
+        }
+
+        /* HERO SECTION */
+        #hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 8rem;
+            background-color: var(--bg-primary);
+            overflow: hidden;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .hero-badge {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            color: var(--accent);
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 2rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .hero-title {
+            font-size: 4.5rem;
+            line-height: 1.05;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.03em;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            max-width: 540px;
+            font-weight: 300;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1.5rem;
+            width: 100%;
+        }
+
+        /* Asymmetric Hero Visual Card */
+        .hero-visual {
+            position: relative;
+            height: 480px;
+            width: 100%;
+        }
+
+        .visual-backdrop {
+            position: absolute;
+            width: 85%;
+            height: 90%;
+            bottom: 0;
+            right: 0;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            z-index: 1;
+        }
+
+        .visual-main-card {
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            top: 5%;
+            left: 5%;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            box-shadow: 10px 15px 40px rgba(0, 0, 0, 0.4);
+            z-index: 2;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .visual-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .visual-illustration {
+            width: 100%;
+            height: 160px;
+            border: 1px dashed var(--border-color);
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            background-color: var(--bg-secondary);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .sparkle-shape {
+            position: absolute;
+            color: var(--accent);
+            opacity: 0.15;
+        }
+
+        .sparkle-1 { top: 15%; left: 15%; width: 44px; height: 44px; }
+        .sparkle-2 { bottom: 15%; right: 15%; width: 56px; height: 56px; }
+
+        .visual-badge {
+            position: absolute;
+            bottom: -5%;
+            right: 10%;
+            background: var(--text-dark);
+            color: var(--bg-primary);
+            padding: 1.25rem 2rem;
+            border-radius: 8px;
+            z-index: 3;
+            box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .visual-badge-text h4 {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .visual-badge-text p {
+            font-size: 0.8rem;
+            color: #A3BBA3;
+            font-weight: 400;
+        }
+
+        .visual-tag {
+            font-family: var(--font-headings);
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            font-weight: 500;
+            line-height: 1.2;
+        }
+
+        @media (max-width: 991px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 5rem;
+            }
+            .hero-title {
+                font-size: 3.5rem;
+            }
+            .hero-visual {
+                height: 420px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            #hero {
+                padding-top: 6rem;
+            }
+            .hero-title {
+                font-size: 2.8rem;
+            }
+            .hero-subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 2rem;
+            }
+            .hero-actions {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .hero-actions .btn {
+                width: 100%;
+            }
+            .visual-main-card {
+                padding: 1.5rem;
+                width: 90%;
+            }
+            .visual-badge {
+                right: 2%;
+                padding: 0.75rem 1.25rem;
+            }
+        }
+
+        /* WHY CHOOSE US SECTION */
+        #why-us {
+            background-color: var(--bg-secondary);
+        }
+
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 4rem;
+            align-items: flex-start;
+        }
+
+        .why-us-sticky-intro {
+            position: sticky;
+            top: 120px;
+        }
+
+        .why-us-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .truth-card {
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2.5rem;
+            transition: var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        /* Hover effect: lift slightly + subtle green shadow */
+        .truth-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.08);
+        }
+
+        .card-icon-box {
+            width: 48px;
+            height: 48px;
+            background-color: var(--bg-secondary);
+            border-radius: 8px;
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .truth-card h3 {
+            font-size: 1.35rem;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        .truth-card p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 991px) {
+            .why-us-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .why-us-sticky-intro {
+                position: static;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .why-us-cards-grid {
+                grid-template-columns: 1fr;
+            }
+            .truth-card {
+                padding: 2rem;
+            }
+        }
+
+        /* SERVICES SECTION */
+        #services {
+            background-color: var(--bg-primary);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .service-card {
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            min-height: 280px;
+            transition: var(--transition-smooth);
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+            box-shadow: 0 12px 30px rgba(46, 139, 87, 0.06);
+        }
+
+        .service-icon-box {
+            color: var(--accent);
+            margin-bottom: 2rem;
+            width: 36px;
+            height: 36px;
+        }
+
+        .service-card h3 {
+            font-size: 1.35rem;
+            color: var(--text-dark);
+            font-weight: 500;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+        }
+
+        .service-card p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+
+        @media (max-width: 1200px) {
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 991px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .service-card {
+                padding: 1.75rem;
+                min-height: auto;
+            }
+        }
+
+        /* HOW IT WORKS SECTION */
+        #process {
+            background-color: var(--bg-secondary);
+            overflow: hidden;
+        }
+
+        .process-flow {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            position: relative;
+        }
+
+        .process-step {
+            position: relative;
+            background: var(--bg-primary);
+            padding: 3rem 2.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            z-index: 1;
+            transition: var(--transition-smooth);
+        }
+
+        .process-step:hover {
+            box-shadow: 0 15px 40px rgba(46, 139, 87, 0.05);
+            transform: translateY(-2px);
+        }
+
+        /* Large light green step numbers overlapping container header */
+        .step-number {
+            font-family: var(--font-headings);
+            font-size: 8rem;
+            font-weight: 700;
+            color: var(--border-color);
+            opacity: 0.65;
+            position: absolute;
+            top: -3.5rem;
+            right: 1.5rem;
+            z-index: -1;
+            line-height: 1;
+            user-select: none;
+            transition: var(--transition-smooth);
+        }
+
+        .process-step:hover .step-number {
+            color: #1F3627;
+            transform: scale(1.05);
+        }
+
+        .process-step h3 {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            font-weight: 500;
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .process-step p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 991px) {
+            .process-flow {
+                grid-template-columns: 1fr;
+                gap: 4rem;
+            }
+            .process-step {
+                padding: 2.5rem 2rem;
+            }
+            .step-number {
+                top: -2.5rem;
+                right: 1rem;
+                font-size: 6rem;
+            }
+        }
+
+        /* TESTIMONIAL REVIEWS SECTION */
+        #reviews {
+            background-color: var(--bg-primary);
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .review-card {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2.5rem;
+            background: var(--bg-primary);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 320px;
+            transition: var(--transition-smooth);
+        }
+
+        .review-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 8px 30px rgba(46, 139, 87, 0.05);
+        }
+
+        .review-stars {
+            display: flex;
+            gap: 4px;
+            color: #F4C430; /* Golden Star */
+            margin-bottom: 1.5rem;
+        }
+
+        .review-stars svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        .review-text {
+            font-size: 1.05rem;
+            color: var(--text-dark);
+            line-height: 1.6;
+            font-style: italic;
+            margin-bottom: 2rem;
+            font-weight: 300;
+            flex-grow: 1;
+        }
+
+        .reviewer-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1.5rem;
+        }
+
+        .reviewer-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: var(--bg-secondary);
+            border: 1.5px solid var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-headings);
+            font-weight: 700;
+            color: var(--accent);
+            font-size: 0.95rem;
+        }
+
+        .reviewer-info h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .reviewer-info p {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 991px) {
+            .reviews-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .review-card {
+                min-height: auto;
+            }
+        }
+
+        /* SERVICE AREAS SECTION */
+        #areas {
+            background-color: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .areas-layout {
+            display: grid;
+            grid-template-columns: 0.82fr 1.18fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .areas-desc {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .badge-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 1rem;
+        }
+
+        .area-badge {
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            padding: 1.1rem;
+            border-radius: 6px;
+            text-align: center;
+            font-family: var(--font-headings);
+            font-weight: 500;
+            font-size: 1rem;
+            color: var(--text-dark);
+            transition: var(--transition-smooth);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .area-badge:hover {
+            border-color: var(--accent);
+            background-color: var(--bg-secondary);
+            transform: translateY(-2px);
+            color: var(--accent);
+        }
+
+        .area-pin {
+            width: 14px;
+            height: 14px;
+            color: var(--accent);
+        }
+
+        @media (max-width: 991px) {
+            .areas-layout {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+
+        /* CONTACT & QUOTE FORM SECTION */
+        #contact {
+            background-color: var(--bg-primary);
+        }
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 5rem;
+            align-items: flex-start;
+        }
+
+        .contact-info-block {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .contact-method {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .contact-icon-box {
+            width: 44px;
+            height: 44px;
+            background-color: var(--bg-secondary);
+            border-radius: 8px;
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-text h4 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: var(--text-dark);
+        }
+
+        .contact-text a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: var(--transition-smooth);
+        }
+
+        .contact-text a:hover {
+            color: var(--accent-hover);
+        }
+
+        .contact-hours p {
+            font-size: 1rem;
+            margin-top: 0.25rem;
+        }
+
+        /* Form styling */
+        .quote-form-container {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 3.5rem;
+            position: relative;
+        }
+
+        .quote-form-container h3 {
+            font-size: 1.75rem;
+            margin-bottom: 2rem;
+            color: var(--text-dark);
+            letter-spacing: -0.01em;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .form-span-2 {
+            grid-column: span 2;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .input-group label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .form-control {
+            font-family: var(--font-body);
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 0.9rem 1.1rem;
+            font-size: 1rem;
+            color: var(--text-dark);
+            outline: none;
+            transition: var(--transition-smooth);
+            width: 100%;
+        }
+
+        .form-control:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(46, 139, 87, 0.08);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .quote-form-container button {
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        /* Success screen when form submitted */
+        .form-success-container {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 4rem 1rem;
+            animation: fadeIn 0.4s ease forwards;
+        }
+
+        .success-circle {
+            width: 72px;
+            height: 72px;
+            background-color: var(--bg-primary);
+            border: 2.5px solid var(--accent);
+            color: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .form-success-container h3 {
+            font-size: 2.2rem;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .form-success-container p {
+            font-size: 1.15rem;
+            max-width: 500px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 991px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+                gap: 4rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .quote-form-container {
+                padding: 2.5rem 1.5rem;
+            }
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            .form-span-2 {
+                grid-column: span 1;
+            }
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--bg-darkest);
+            color: var(--text-muted);
+            padding: 6rem 2rem 3rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.22fr 0.78fr 1fr;
+            gap: 5rem;
+            margin-bottom: 4rem;
+            max-width: 1240px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-col {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .footer-logo-text {
+            color: var(--accent);
+            font-family: var(--font-headings);
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .footer-desc {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .footer-title h4 {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: var(--transition-smooth);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+            padding-left: 4px;
+        }
+
+        .footer-contact-line {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+        }
+
+        .footer-contact-line svg {
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 2rem;
+            max-width: 1240px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.85rem;
+        }
+
+        .footer-bottom p {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 991px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            footer {
+                padding: 4rem 1.25rem 2rem;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1.5rem;
+                text-align: center;
+            }
+        }
+
+        /* SCROLL ANIMATIONS */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: transform, opacity;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Staggered load delays */
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
+
+        /* Directional reveals */
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-40px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: transform, opacity;
+        }
+        .reveal-left.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(40px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: transform, opacity;
+        }
+        .reveal-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.95) translateY(20px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: transform, opacity;
+        }
+        .reveal-scale.active {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- STICKY HEADER -->
+    <header id="main-header">
+        <div class="nav-container">
+            <a href="#hero" class="logo" id="header-logo">
+                <svg class="logo-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-11-7-11S5 10.7 5 15a7 7 0 0 0 7 7z"/>
+                </svg>
+                <div>
+                    <span class="logo-text">Valley</span>
+                    <span class="logo-subtext">House Cleaning</span>
+                </div>
+            </a>
+            
+            <button class="hamburger" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-links">
+                <li><a href="#services" class="nav-link">Our Services</a></li>
+                <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                <li><a href="#process" class="nav-link">How It Works</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#areas" class="nav-link">Service Areas</a></li>
+                <li><a href="#contact" class="nav-cta">Get Free Quote</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge reveal">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/>
+                        </svg>
+                        Insured & Bonded in Maricopa County
+                    </div>
+                    <h1 class="hero-title reveal reveal-delay-1">Your Home, <br><span class="accent-text">Spotlessly</span> Clean</h1>
+                    <p class="hero-subtitle reveal reveal-delay-2">Approachable and meticulously thorough house cleaning for families in Phoenix and the West Valley. We handle the dust, so you can enjoy your life.</p>
+                    <div class="hero-actions reveal reveal-delay-3">
+                        <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+                        <a href="#services" class="btn btn-secondary">Our Services</a>
+                    </div>
+                </div>
+                
+                <!-- Asymmetric visual decoration block representing pristine space -->
+                <div class="hero-visual reveal-right reveal-delay-2">
+                    <div class="visual-backdrop"></div>
+                    <div class="visual-main-card">
+                        <div class="visual-logo">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            </svg>
+                            <span style="font-family: var(--font-headings); font-weight:700; color:var(--text-dark);">Valley House Cleaning</span>
+                        </div>
+                        <div class="visual-illustration">
+                            <!-- Premium minimalist stars indicating spotless environment -->
+                            <svg class="sparkle-shape sparkle-1" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L15 9L22 10L17 15L18 22L12 18L6 22L7 15L2 10L9 9Z"/>
+                            </svg>
+                            <svg class="sparkle-shape sparkle-2" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L15 9L22 10L17 15L18 22L12 18L6 22L7 15L2 10L9 9Z"/>
+                            </svg>
+                            <p style="font-family: var(--font-headings); font-weight: 500; font-size:1.1rem; color:var(--accent); position:relative; z-index:10;">Guaranteed Freshness</p>
+                        </div>
+                        <div class="visual-tag">Professional. Insured. Friendly.</div>
+                    </div>
+                    <div class="visual-badge">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        <div class="visual-badge-text">
+                            <h4>100% Secure</h4>
+                            <p>Vetted & Checked Cleaners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section id="why-us">
+        <div class="container">
+            <div class="why-us-grid">
+                <div class="why-us-sticky-intro reveal-left">
+                    <div class="section-header">
+                        <span class="section-subtitle">Approachable Experience</span>
+                        <h2 class="section-title">The Standard of a Spotless Sanctuary</h2>
+                        <p class="section-desc">We believe a clean house yields a quiet mind. That is why our cleanings focus on consistent execution, premium organic safety, and scheduling that centers around your life.</p>
+                    </div>
+                </div>
+                
+                <div class="why-us-cards-grid">
+                    <!-- Insured & Bonded -->
+                    <div class="truth-card reveal-scale reveal-delay-1">
+                        <div class="card-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <h3>Insured & Bonded</h3>
+                        <p>Total peace of mind. We protect your home, accessories, and privacy with extensive insurance safeguards.</p>
+                    </div>
+                    
+                    <!-- Eco-Friendly Products -->
+                    <div class="truth-card reveal-scale reveal-delay-2">
+                        <div class="card-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.58 1 9.8a7 7 0 0 1-9 8.2z"/>
+                            </svg>
+                        </div>
+                        <h3>Eco-Friendly Products</h3>
+                        <p>Breathe easy. We use strictly plant-derived, non-toxic products that are completely safe for your kids and curious pets.</p>
+                    </div>
+                    
+                    <!-- Satisfaction Guarantee -->
+                    <div class="truth-card reveal-scale reveal-delay-3">
+                        <div class="card-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/>
+                            </svg>
+                        </div>
+                        <h3>Satisfaction Guarantee</h3>
+                        <p>Not completely happy? Contact us within 24 hours, and we will send a team back to re-clean any area free of charge.</p>
+                    </div>
+                    
+                    <!-- Flexible Scheduling -->
+                    <div class="truth-card reveal-scale reveal-delay-4">
+                        <div class="card-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                        </div>
+                        <h3>Flexible Scheduling</h3>
+                        <p>We work on your clock. Book weekly, bi-weekly, monthly, or customized visits matching your household routine.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Our Professional Scope</span>
+                <h2 class="section-title">Cleanings Built for Modern Living</h2>
+                <p class="section-desc">From brief touch-ups to intensive, multi-appliance refreshes, choose a service customized for your space's immediate needs.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Standard Home Cleaning -->
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="service-icon-box">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+                        </svg>
+                    </div>
+                    <h3>Standard Home Cleaning</h3>
+                    <p>Regular maintenance cleaning to keep dust, grime, and debris away. Perfect for busy families on a weekly or bi-weekly cycle.</p>
+                </div>
+
+                <!-- Deep Cleaning -->
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-icon-box">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m21 16-1.42 1.42a2 2 0 0 1-2.83 0l-5.66-5.66a2 2 0 0 1 0-2.83L12.5 7.5"/>
+                            <circle cx="12" cy="12" r="10" stroke-dasharray="4 2"/>
+                        </svg>
+                    </div>
+                    <h3>Deep Cleaning</h3>
+                    <p>A comprehensive top-to-bottom clean. Ideal for houses that have been neglected, or for your very first session with us.</p>
+                </div>
+
+                <!-- Move-In / Move-Out Cleaning -->
+                <div class="service-card reveal reveal-delay-3">
+                    <div class="service-icon-box">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                        </svg>
+                    </div>
+                    <h3>Move-In / Move-Out</h3>
+                    <p>Ensure you secure your deposit or step into an immaculate fresh start. Fully covers all tracks, drawers, baseboards, and closets.</p>
+                </div>
+
+                <!-- Recurring Cleaning -->
+                <div class="service-card reveal reveal-delay-4">
+                    <div class="service-icon-box">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38"/>
+                        </svg>
+                    </div>
+                    <h3>Recurring Cleaning</h3>
+                    <p>Establish automated, worry-free house maintenance with scheduling, dedicated cleaners, and customized checklists.</p>
+                </div>
+
+                <!-- Kitchen Deep Clean -->
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="service-icon-box">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <ellipse cx="12" cy="12" rx="3" ry="1"/>
+                            <circle cx="8" cy="8" r="1"/><circle cx="16" cy="8" r="1"/>
+                        </svg>
+                    </div>
+                    <h3>Kitchen Deep Clean</h3>
+                    <p>Meticulous focus on countertops, grease-prone vents, cabinetry, and full sanitization inside the oven and refrigerator.</p>
+                </div>
+
+                <!-- Bathroom Sanitization -->
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-icon-box">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-11-7-11S5 10.7 5 15a7 7 0 0 0 7 7z"/>
+                        </svg>
+                    </div>
+                    <h3>Bathroom Sanitization</h3>
+                    <p>Intense details: grout scrub, tile clean-outs, lime descaling, glass screen shines, and comprehensive surface disinfecting.</p>
+                </div>
+
+                <!-- Window Cleaning -->
+                <div class="service-card reveal reveal-delay-3">
+                    <div class="service-icon-box">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="3" y1="9" x2="21" y2="9"/>
+                        </svg>
+                    </div>
+                    <h3>Window Cleaning (Interior)</h3>
+                    <p>Streak-free interior windows, thoroughly cleared frames, wiped sills, and sparkling glass to flood your home with Arizona sun.</p>
+                </div>
+
+                <!-- Post-Construction Cleaning -->
+                <div class="service-card reveal reveal-delay-4">
+                    <div class="service-icon-box">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 20h20M16 20V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v15"/>
+                        </svg>
+                    </div>
+                    <h3>Post-Construction</h3>
+                    <p>Full removal of airborne sheetrock dust, fine paint residues, woodwork debris, and vacuum tracks left behind by remodelers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section id="process">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Simplified Coordination</span>
+                <h2 class="section-title">Seamless From Start to Finish</h2>
+                <p class="section-desc">We respect your time. Enjoy a process designed to minimize friction and deliver exactly what you need.</p>
+            </div>
+            
+            <div class="process-flow">
+                <!-- Step 1 -->
+                <div class="process-step reveal-scale reveal-delay-1">
+                    <div class="step-number">01</div>
+                    <h3>Book Online or Call</h3>
+                    <p>Request a quote online or speak directly to our local staff. Tell us about your home, your requirements, and pick your preferred dates.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-step reveal-scale reveal-delay-2">
+                    <div class="step-number">02</div>
+                    <h3>We Clean Your Home</h3>
+                    <p>Our vetted, background-checked cleaners arrive securely with state-of-the-art tools and execute our meticulous signature checklist.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-step reveal-scale reveal-delay-3">
+                    <div class="step-number">03</div>
+                    <h3>Enjoy Your Space</h3>
+                    <p>Step through your front door and enjoy the scent of safe, plant-derived freshness. Your home is now a spotless, calming sanctuary.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section id="reviews">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Client Perspectives</span>
+                <h2 class="section-title">Loved by West Valley Neighbors</h2>
+                <p class="section-desc">Honest stories reflecting our emphasis on quality, trust, and approachable service in the community.</p>
+            </div>
+            
+            <div class="reviews-grid">
+                <!-- Testimonial 1 -->
+                <div class="review-card reveal-scale reveal-delay-1">
+                    <div>
+                        <div class="review-stars">
+                            <!-- 5 Stars SVG -->
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                        <p class="review-text">"The eco-friendly products they use are such a gamechanger. No strong bleach smells, just a clean, fresh, natural home. And with our twins crawling, knowing the floors are safe is everything."</p>
+                    </div>
+                    <div class="reviewer-meta">
+                        <div class="reviewer-avatar">MR</div>
+                        <div class="reviewer-info">
+                            <h4>Mateo Rodriguez</h4>
+                            <p>Tolleson, AZ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="review-card reveal-scale reveal-delay-2">
+                    <div>
+                        <div class="review-stars">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                        <p class="review-text">"Outstanding service. Absolute professionals who show up on time and focus on actual details. They cleaned baseboards I haven't seen in years. Truly reclaimed my weekends!"</p>
+                    </div>
+                    <div class="reviewer-meta">
+                        <div class="reviewer-avatar">SJ</div>
+                        <div class="reviewer-info">
+                            <h4>Sarah Jenkins</h4>
+                            <p>Goodyear, AZ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="review-card reveal-scale reveal-delay-3">
+                    <div>
+                        <div class="review-stars">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                        </div>
+                        <p class="review-text">"Un servicio impecable. The deep clean exceeded all my expectations – highly thorough and respectful of our home. They even shined interior glass that had desert dust buildup."</p>
+                    </div>
+                    <div class="reviewer-meta">
+                        <div class="reviewer-avatar">EC</div>
+                        <div class="reviewer-info">
+                            <h4>Elena Chavez</h4>
+                            <p>Glendale, AZ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE AREAS SECTION -->
+    <section id="areas">
+        <div class="container">
+            <div class="areas-layout">
+                <div class="reveal-left">
+                    <div class="section-header" style="margin-bottom:0;">
+                        <span class="section-subtitle">Local & Committed</span>
+                        <h2 class="section-title">Where We Clean</h2>
+                        <p class="areas-desc">Consistently serving neighborhood residences across Greater Phoenix and the entire West Valley region. Check your specific town below.</p>
+                        
+                        <!-- Open details -->
+                        <div style="display:flex; align-items:center; gap:0.5rem; color:var(--text-dark); font-weight:600; font-size:1.05rem;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>
+                            </svg>
+                            Maricopa County Central Coordinates
+                        </div>
+                        <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.25rem;">Latitude: 33.4698559, Longitude: -112.1919145</p>
+                    </div>
+                </div>
+                
+                <div class="badge-grid">
+                    <div class="area-badge reveal-scale reveal-delay-1">
+                        <svg class="area-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Phoenix
+                    </div>
+                    <div class="area-badge reveal-scale reveal-delay-2">
+                        <svg class="area-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Avondale
+                    </div>
+                    <div class="area-badge reveal-scale reveal-delay-3">
+                        <svg class="area-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Goodyear
+                    </div>
+                    <div class="area-badge reveal-scale reveal-delay-4">
+                        <svg class="area-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Glendale
+                    </div>
+                    <div class="area-badge reveal-scale reveal-delay-1">
+                        <svg class="area-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Peoria
+                    </div>
+                    <div class="area-badge reveal-scale reveal-delay-2">
+                        <svg class="area-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Surprise
+                    </div>
+                    <div class="area-badge reveal-scale reveal-delay-3">
+                        <svg class="area-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Litchfield Park
+                    </div>
+                    <div class="area-badge reveal-scale reveal-delay-4">
+                        <svg class="area-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Buckeye
+                    </div>
+                    <div class="area-badge reveal-scale reveal-delay-1">
+                        <svg class="area-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Tolleson
+                    </div>
+                    <div class="area-badge reveal-scale reveal-delay-2">
+                        <svg class="area-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Chandler
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & QUOTE FORM SECTION -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-info-block reveal-left">
+                    <div class="section-header" style="margin-bottom:0;">
+                        <span class="section-subtitle">No-Obligation Estimating</span>
+                        <h2 class="section-title">Schedule a Pristine Clean</h2>
+                        <p class="section-desc">Submit our simple request form. Our West Valley coordinator will calculate your estimate and verify scheduling availability within 2 hours of receipt.</p>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon-box">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Give Us a Call</h4>
+                            <p style="font-size:0.8rem; text-transform:uppercase; font-weight:600; color:var(--text-muted); padding-bottom:2px;">[CLIENT TO FILL]</p>
+                            <a href="tel:6025550199">(602) 555-0199</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon-box">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Send an Email</h4>
+                            <p style="font-size:0.8rem; text-transform:uppercase; font-weight:600; color:var(--text-muted); padding-bottom:2px;">[CLIENT TO FILL]</p>
+                            <a href="mailto:info@valleyhousecleaning.com">info@valleyhousecleaning.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon-box">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text contact-hours">
+                            <h4>Operating Hours</h4>
+                            <p>Monday – Friday: 8:00 AM – 6:00 PM</p>
+                            <p>Saturday: 9:00 AM – 4:00 PM</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quote estimate interactive block -->
+                <div class="quote-form-container reveal-right">
+                    <form id="quote-request-form">
+                        <h3>Ask For an Quick Quote</h3>
+                        <div class="form-grid">
+                            <div class="input-group">
+                                <label for="form-name">Full Name</label>
+                                <input type="text" id="form-name" class="form-control" placeholder="Juan Rodriguez" required>
+                            </div>
+                            
+                            <div class="input-group">
+                                <label for="form-phone">Phone Number</label>
+                                <input type="tel" id="form-phone" class="form-control" placeholder="(602) 555-0100" required>
+                            </div>
+
+                            <div class="input-group form-span-2">
+                                <label for="form-email">Email Address</label>
+                                <input type="email" id="form-email" class="form-control" placeholder="juan@domain.com" required>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="form-service">Service Type</label>
+                                <select id="form-service" class="form-control" required style="appearance: none;">
+                                    <option value="" disabled selected>Select service...</option>
+                                    <option value="standard">Standard Home Cleaning</option>
+                                    <option value="deep">Deep Clean Refresher</option>
+                                    <option value="move">Move-In / Move-Out</option>
+                                    <option value="recurring">Recurring Cycle Cleaning</option>
+                                    <option value="kitchen">Kitchen Deep Clean</option>
+                                    <option value="bathroom">Bathroom Sanitization</option>
+                                    <option value="window">Interior Window Clean</option>
+                                    <option value="construction">Post-Construction</option>
+                                </select>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="form-date">Preferred Date</label>
+                                <input type="date" id="form-date" class="form-control" required>
+                            </div>
+
+                            <div class="input-group form-span-2">
+                                <label for="form-message">Special Notes / Floor Space</label>
+                                <textarea id="form-message" class="form-control" placeholder="Please mention number of bedrooms, bathrooms, approximate square footage, or any pet details..." required></textarea>
+                            </div>
+                            
+                            <div class="form-span-2">
+                                <button type="submit" class="btn btn-primary">Request Free Quote</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Hidden validation feedback success view -->
+                    <div class="form-success-container" id="form-success-screen">
+                        <div class="success-circle">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                        </div>
+                        <h3>Quote Request Dispatched!</h3>
+                        <p>Thank you for choosing Valley House Cleaning. Our Maricopa county coordinator is compiling your specialized estimate. We will reach out to you within two business hours!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo-text">Valley House Cleaning</div>
+                <p class="footer-desc">Your highly trusted, professional neighborhood house cleaning service. Dedicated to eco-safe standards and thorough craftsmanship throughout Maricopa county.</p>
+                <p style="color: rgba(255,255,255,0.4); font-size:0.85rem;">Coordinates: 33.4698559, -112.1919145</p>
+            </div>
+            
+            <div class="footer-col">
+                <div class="footer-title">
+                    <h4>Navigation</h4>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#why-us">Why Choose Us</a></li>
+                    <li><a href="#process">How It Works</a></li>
+                    <li><a href="#reviews">Testimonials</a></li>
+                    <li><a href="#areas">Service Areas</a></li>
+                    <li><a href="#contact">Get Free Estimate</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <div class="footer-title">
+                    <h4>Contact Details</h4>
+                </div>
+                <div class="footer-contact-line">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <span>(602) 555-0199 [CLIENT TO FILL]</span>
+                </div>
+                <div class="footer-contact-line">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                    <span>info@valleyhousecleaning.com [CLIENT TO FILL]</span>
+                </div>
+                <div class="footer-contact-line">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <span>Phoenix Metro Service Area, AZ</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Valley House Cleaning. All rights reserved. Servicing Phoenix and the West Valley communities.</p>
+            <p>Designed with Approachable Professionalism</p>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE SCRIPTS -->
+    <script>
+        // Sticky Header Transition on Scroll
+        window.addEventListener('scroll', function() {
+            var header = document.getElementById('main-header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Navigation Toggle
+        var navToggle = document.getElementById('nav-toggle');
+        var navLinks = document.getElementById('nav-links');
+
+        navToggle.addEventListener('click', function() {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu on link click
+        var navMenuOptions = document.querySelectorAll('.nav-link, .nav-cta, .logo');
+        navMenuOptions.forEach(function(link) {
+            link.addEventListener('click', function() {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Intercept form submission to show stunning transition response
+        var quoteForm = document.getElementById('quote-request-form');
+        var successScreen = document.getElementById('form-success-screen');
+
+        quoteForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Collect Form Values Safely
+            var name = document.getElementById('form-name').value;
+            var phone = document.getElementById('form-phone').value;
+            var email = document.getElementById('form-email').value;
+            var service = document.getElementById('form-service').value;
+            var date = document.getElementById('form-date').value;
+            var message = document.getElementById('form-message').value;
+
+            // Transition: Animate out form inputs, reveal confirmation block
+            quoteForm.style.transition = 'opacity 0.3s ease';
+            quoteForm.style.opacity = '0';
+            
+            setTimeout(function() {
+                quoteForm.style.display = 'none';
+                successScreen.style.display = 'flex';
+            }, 300);
+        });
+
+        // IntersectionObserver for Scroll Reveal animations
+        document.addEventListener('DOMContentLoaded', function() {
+            var revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+            
+            if ('IntersectionObserver' in window) {
+                var observerOptions = {
+                    root: null,
+                    rootMargin: '0px 0px -50px 0px', // slightly offset trigger to keep feel elegant
+                    threshold: 0.05
+                };
+
+                var revealObserver = new IntersectionObserver(function(entries, observer) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('active');
+                            revealObserver.unobserve(entry.target);
+                        }
+                    });
+                }, observerOptions);
+
+                revealElements.forEach(function(el) {
+                    revealObserver.observe(el);
+                });
+            } else {
+                // Fallback for older browsers
+                revealElements.forEach(function(el) {
+                    el.classList.add('active');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
